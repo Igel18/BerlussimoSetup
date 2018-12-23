@@ -18,12 +18,15 @@ graphical (debian desktop environment) installed with default system tools
 # login as root
 su 
 
+# install git
+apt install git --yes
+
 # Download setup script 
-cd /var/???/; git clone https://github.com/Igel18/BerlussimoSetup berlussimo
-cd /var/???/berlussimo/; git checkout develop
+cd /var/tmp/; git clone https://github.com/Igel18/BerlussimoSetup berlussimo
+cd /var/tmp/berlussimo/; git checkout develop
 
 # change execution permissions 
-cd /var/???/berlussimo/ 
+cd /var/tmp/berlussimo/ 
 chmod -x setup.sh 
 
 #execute script 
