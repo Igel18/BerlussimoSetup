@@ -37,6 +37,9 @@ chmod -x setup.sh
 #### execute script 
 bash setup.sh
 
+-> you will be asked to set and a password for sql: typ 'berlussimo' to have no changes 
+-> you will be asked for the sql password 4 more times. allways type 'berlussimo' 
+
 ### you should now be able to open http://<your_server>/ in your browser and login with
 login: admin@berlussimo
 
