@@ -34,7 +34,7 @@ cd /var/tmp/berlussimo/
 
 chmod -x setup.sh 
 
-####execute script 
+#### execute script 
 bash setup.sh
 
 ### you should now be able to open http://<your_server>/ in your browser and login with
