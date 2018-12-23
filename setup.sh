@@ -97,14 +97,14 @@ echo 'install and setup database berlussimo with user root and password ra'
 echo 
 mysqladmin create -u root -p berlussimo
 ### Change password do "ra"
-mysql password ra
+# mysql password ra
 
-echo
-echo 'please type manually the password ra and then the sql command to change privileges if not automated'
-echo
+#echo
+#echo 'please type manually the password ra and then the sql command to change privileges if not automated'
+#echo
 
 ### Connect to mysql and Change Privileges 
-mysql -u root -p ra berlussimo < /var/www/berlussimo/install/DB-Version-0.4.0/berlussimo_db_permissions.sql
+#mysql -u root -p ra berlussimo < /var/www/berlussimo/install/DB-Version-0.4.0/berlussimo_db_permissions.sql
  
 ## Change Privileges 
 # grant all privileges on berlussimo.* to root@localhost identified by 'ra';
@@ -112,10 +112,10 @@ mysql -u root -p ra berlussimo < /var/www/berlussimo/install/DB-Version-0.4.0/be
 echo 
 echo 'setup database query for berlussimo'
 echo 
-mysql -u root -p ra berlussimo < /var/www/berlussimo/install/DB-Version-0.4.0/berlussimo_db_0.4.0.sql
-mysql -u root -p ra berlussimo < /var/www/berlussimo/install/DB-Version-0.4.0/berlussimo_db_0.4.1.sql
-mysql -u root -p ra berlussimo < /var/www/berlussimo/install/DB-Version-0.4.0/berlussimo_db_0.4.2.sql
-mysql -u root -p ra berlussimo < /var/www/berlussimo/install/DB-Version-0.4.0/berlussimo_db_0.4.3.sql
+mysql -u root -p berlussimo < /var/www/berlussimo/install/DB-Version-0.4.0/berlussimo_db_0.4.0.sql
+mysql -u root -p berlussimo < /var/www/berlussimo/install/DB-Version-0.4.0/berlussimo_db_0.4.1.sql
+mysql -u root -p berlussimo < /var/www/berlussimo/install/DB-Version-0.4.0/berlussimo_db_0.4.2.sql
+mysql -u root -p berlussimo < /var/www/berlussimo/install/DB-Version-0.4.0/berlussimo_db_0.4.3.sql
 
 #install composer and fetch dependencies
 echo 
