@@ -104,7 +104,7 @@ mysqladmin create -u root -p berlussimo
 #echo
 
 ### Connect to mysql and Change Privileges 
-#mysql -u root -p ra berlussimo < /var/www/berlussimo/install/DB-Version-0.4.0/berlussimo_db_permissions.sql
+mysql -u root -p berlussimo < /var/www/berlussimo/install/DB-Version-0.4.0/berlussimo_db_permissions.sql
  
 ## Change Privileges 
 # grant all privileges on berlussimo.* to root@localhost identified by 'ra';
