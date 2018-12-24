@@ -79,7 +79,7 @@ apt install php7.0 php7.0-gd php7.0-mysql php7.0-fpm php7.0-xml php7.0-mbstring 
 echo
 echo 'get berlussimo from git'
 echo 
-cd /var/www/; git clone https://github.com/BerlusGmbH/Berlussimo berlussimo
+cd /var/www/; git clone https://github.com/Igel18/Berlussimo berlussimo
 cd /var/www/berlussimo/; git checkout develop
 
 # install MySQL. The setup will let you set a root password for the mySQL server. You will need this later.
@@ -87,7 +87,6 @@ echo
 echo 'install mysql'
 echo 
 apt-get install mysql-server --yes
-# apt install mysql-workbench
 
 ### import database schema. Theese instructions will create a database named berlussimo.
 ### Set this name to reflect your settings from config.inc.php
@@ -97,7 +96,6 @@ echo 'install and setup database berlussimo with user root and password ra'
 echo 
 mysqladmin create -u root -p berlussimo
 ### Change password do "ra"
-# mysql password ra
 
 #echo
 #echo 'please type manually the password ra and then the sql command to change privileges if not automated'
@@ -106,9 +104,6 @@ mysqladmin create -u root -p berlussimo
 ### Connect to mysql and Change Privileges 
 mysql -u root -p berlussimo < /var/www/berlussimo/install/DB-Version-0.4.0/berlussimo_db_permissions.sql
  
-## Change Privileges 
-# grant all privileges on berlussimo.* to root@localhost identified by 'ra';
-
 echo 
 echo 'setup database query for berlussimo'
 echo 
@@ -187,9 +182,6 @@ systemctl start laravel-queue
 systemctl enable laravel-queue
 
 ### you should now be able to open http://<your_server>/ in your browser and login with
-# login: admin@berlussimo
-# password: password
-
 echo
 echo 'you should now be able to open http://localhost/ in your browser and login with'
 echo 'login: admin@berlussimo'
