@@ -79,7 +79,7 @@ apt install php7.0 php7.0-gd php7.0-mysql php7.0-fpm php7.0-xml php7.0-mbstring 
 echo
 echo 'get berlussimo from git'
 echo 
-cd /var/www/; git clone https://github.com/Igel18/Berlussimo berlussimo
+cd /var/www/; git clone https://github.com/BerlusGmbH/Berlussimo berlussimo
 cd /var/www/berlussimo/; git checkout develop
 
 # install MySQL. The setup will let you set a root password for the mySQL server. You will need this later.
