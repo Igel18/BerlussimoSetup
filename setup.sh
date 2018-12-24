@@ -92,7 +92,7 @@ apt-get install mysql-server --yes
 ### Set this name to reflect your settings from config.inc.php
 ### You will be prompted for the root password set above.
 echo 
-echo 'install and setup database berlussimo with user root and password ra'
+echo 'install and setup database berlussimo with user root and password berlussimo'
 echo 
 mysqladmin create -u root -p berlussimo
 ### Change password do "ra"
