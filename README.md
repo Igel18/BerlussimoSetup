@@ -37,9 +37,11 @@ chmod -x setup.sh
 #### execute script 
 bash setup.sh
 
--> you will be asked to set and a password for sql: typ 'berlussimo' to have no changes 
+-> you will be asked 2 times to set and a password for sql: typ 'berlussimo' to have no changes 
+"install and setup database berlussimo with user root and password berlussimo"
 
--> you will be asked for the sql password 4 more times. allways type 'berlussimo' 
+-> you will be asked 4 times for the sql password. allways type 'berlussimo' 
+"setup database query for berlussimo" 
 
 -> you will be asked for really want to do this command (yes/no) type 'yes' 
 
